@@ -1,0 +1,20 @@
+[project]
+name = "proofaug-isabelle"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "func-timeout",
+    "grpc",
+    "fire",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["."]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
