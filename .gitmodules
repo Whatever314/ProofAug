@@ -8,5 +8,5 @@
 	branch = linear-viv
 [submodule "PISA"]
 	path = Portal-to-ISAbelle
-	url = https://github.com/haoxiongliu/Portal-to-ISAbelle.git
-	branch = dev_lhx
+	url = https://github.com/Whatever314/Portal-to-ISAbelle.git
+	branch = ws
