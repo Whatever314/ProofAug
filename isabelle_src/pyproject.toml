@@ -3,9 +3,14 @@ name = "proofaug-isabelle"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "func-timeout",
-    "grpc",
-    "fire",
+    "fire>=0.7.1",
+    "func-timeout>=4.3.5",
+    "grpcio==1.62.2",
+    "jinja2>=3.1.6",
+    "openai>=2.29.0",
+    "protobuf==3.20.3",
+    "pytest>=9.0.2",
+    "tqdm>=4.67.3",
 ]
 
 [tool.pytest.ini_options]
@@ -18,3 +23,15 @@ python_functions = ["test_*"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.hatch.build.targets.wheel]
+# Flat-layout repo: explicitly list top-level import packages/modules that
+# should ship in the wheel.
+packages = [
+    "utils",
+]
