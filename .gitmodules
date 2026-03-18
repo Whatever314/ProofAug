@@ -6,3 +6,7 @@
 	path = lean_src/repl
 	url = https://github.com/haoxiongliu/repl.git
 	branch = linear-viv
+[submodule "PISA"]
+	path = Portal-to-ISAbelle
+	url = https://github.com/haoxiongliu/Portal-to-ISAbelle.git
+	branch = dev_lhx
